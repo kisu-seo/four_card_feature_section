@@ -121,79 +121,90 @@ meter {
 html {
     font-family: 'Poppins', sans-serif;
     font-size: 15px;
+    line-height: 1.5;
     background-color: hsl(0, 0%, 98%);
 }
 
-body {
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    padding: 5rem 1.5rem;
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.header-title {
-    font-size: 1.5rem;
-    font-weight: 200;
-    letter-spacing: 0.03rem;
-    color: hsl(234, 12%, 34%);
-}
-
-.header-subtitle {
-    font-size: 1.5rem;
-    font-weight: 600;
-    letter-spacing: 0.03rem;
-    color: hsl(234, 12%, 34%);
-}
-
-.description {
-    max-width: 375px;
     text-align: center;
-    padding: 0 2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 4rem;
 }
 
-.header-description {
-    font-size: 1rem;
+h1 {
+    font-size: 1.6rem;
     font-weight: 200;
     color: hsl(229, 6%, 66%);
-
 }
 
-main .card {
+h2 {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: hsl(234, 12%, 34%);
+}
+
+header p {
+    max-width: 33ch;
+    margin: 0 auto;
+    color: hsl(229, 6%, 66%);
+}
+
+.card-container {
+    margin: 0 1.5rem;
+    width: 100%;
+    max-width: 320px;
+}
+
+.card {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    text-align: left;
+    line-height: 1.7;
     display: flex;
     flex-direction: column;
-    max-width: 375px;
-    margin: 0 2.2rem;
-    padding: 0 2.2rem;
-    border: 1px solid red;
+    justify-content: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
 }
 
+.supervisor {
+    border-top: 0.3rem solid hsl(180, 62%, 55%);
+    grid-area: supervisor;
+}
 
+.team-builder {
+    border-top: 0.3rem solid hsl(0, 78%, 62%);
+    grid-area: team-builder;
+}
+
+.karma {
+    border-top: 0.3rem solid hsl(34, 97%, 64%);
+    grid-area: karma;
+}
+
+.calculator {
+    border-top: 0.3rem solid hsl(212, 86%, 64%);
+    grid-area: calculator;
+}
 
 h3 {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: hsl(234, 12%, 34%);
+    font-size: 1rem;
+    font-weight: 600;
 }
 
-main p {
-    font-size: 0.8rem;
-    font-weight: 200;
+.card-container p {
+    font-size: 0.9rem;
     color: hsl(229, 6%, 66%);
 }
 
-main img {
+.card img {
+    margin-top: 1.5rem;
     align-self: flex-end;
-    width: 3rem;
-    height: 3rem;
-    margin-left: auto;
 }
